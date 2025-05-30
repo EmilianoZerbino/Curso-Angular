@@ -1,0 +1,76 @@
+Clase 2: Componentes y Templates
+
+Introducción
+
+En esta segunda clase vamos a trabajar con los componentes, que son las piezas fundamentales de una aplicación Angular. Aprenderás cómo crear un componente, usarlo dentro de otro componente y modificar sus archivos HTML, CSS y TypeScript para personalizar su comportamiento y apariencia.
+
+Paso 1: Crear un nuevo componente
+
+Abre tu terminal en la carpeta del proyecto y ejecuta el siguiente comando para crear un componente llamado `saludo`:
+
+ng generate component saludo
+
+O puedes usar la versión corta:
+
+ng g c saludo
+
+Angular CLI generará automáticamente una carpeta `saludo` con cuatro archivos:
+
+- saludo.component.ts (lógica del componente)
+- saludo.component.html (template o vista)
+- saludo.component.css (estilos específicos)
+- saludo.component.spec.ts (para pruebas)
+
+Paso 2: Usar el componente en `app.component.html`
+
+Para mostrar el componente `saludo` dentro del componente principal, abre el archivo:
+
+src/app/app.component.html
+
+Y agrega la etiqueta del selector del componente `saludo`:
+
+<app-saludo></app-saludo>
+
+Guarda el archivo y revisa en el navegador (en http://localhost:4200) que el componente aparece renderizado.
+
+Paso 3: Editar HTML, CSS y TypeScript del componente
+
+Ahora puedes personalizar tu componente modificando sus archivos:
+
+- saludo.component.html: Aquí escribes el contenido HTML que quieres mostrar.
+
+- saludo.component.css: Estilos CSS para darle diseño y color a tu componente.
+
+- saludo.component.ts: Aquí está la lógica en TypeScript, donde puedes definir variables, funciones y manejar la interacción.
+
+Por ejemplo, abre `saludo.component.html` y cambia su contenido a:
+
+<h2>¡Hola desde el componente Saludo!</h2>
+<p>Bienvenido a tu segunda clase de Angular.</p>
+
+Luego, en `saludo.component.css` puedes agregar:
+
+h2 {
+  color: #2c3e50;
+  font-family: Arial, sans-serif;
+}
+p {
+  font-style: italic;
+  color: #34495e;
+}
+
+Y en `saludo.component.ts` puedes definir una propiedad para mostrar en el template:
+
+export class SaludoComponent {
+  mensaje: string = 'Este es un mensaje desde TypeScript';
+}
+
+Luego en el HTML lo usas con interpolación:
+
+<p>{{ mensaje }}</p>
+
+Resumen
+
+- Creamos un componente con `ng generate component saludo`.
+- Lo usamos en `app.component.html` con `<app-saludo></app-saludo>`.
+- Editamos sus archivos HTML, CSS y TypeScript para personalizarlo.

@@ -1,0 +1,104 @@
+
+Curso Angular desde Cero - Guía Completa
+
+✨ Introducción
+
+Bienvenido al curso de Angular. Esta guía te acompañará paso a paso para que puedas aprender y practicar en tus distintas computadoras, manteniendo todo sincronizado mediante GitHub.
+
+✅ Requisitos Iniciales
+
+Software a instalar en cada PC:
+
+- Node.js (https://nodejs.org/) - versión LTS
+- Angular CLI:
+  npm install -g @angular/cli
+- Git (https://git-scm.com/)
+- Visual Studio Code (opcional pero recomendado)
+
+Clonar el repositorio:
+  git clone https://github.com/TU_USUARIO/curso-angular.git
+  cd curso-angular
+
+🔄 Flujo de trabajo con Git (en cada PC)
+
+1. Antes de comenzar:
+  git pull
+
+2. Al finalizar:
+  git add .
+  git commit -m "Progreso del día X"
+  git push
+
+📚 Contenido del Curso
+
+Clase 1: Tu primer proyecto Angular
+- Crear proyecto Angular: ng new primer-proyecto
+- Ejecutar servidor local: ng serve
+- Navegar a http://localhost:4200
+
+Clase 2: Componentes y Templates
+- Crear componente: ng generate component saludo
+- Usar en app.component.html: <app-saludo></app-saludo>
+- Editar HTML, CSS, y TypeScript
+
+Clase 3: Data Binding
+- Interpolación: {{ variable }}
+- Property Binding: [property]="valor"
+- Event Binding: (evento)="metodo()"
+- Two-Way Binding: [(ngModel)]="variable"
+
+Clase Extra: Fundamentos de TypeScript para Angular
+- Tipos básicos: string, number, boolean, any
+- Interfaces:
+  interface Usuario {
+    nombre: string;
+    edad: number;
+    activo: boolean;
+  }
+- Clases:
+  class Persona {
+    constructor(public nombre: string, public edad: number) {}
+    saludar() {
+      return `Hola, soy ${this.nombre}`;
+    }
+  }
+- Decoradores: @Component, @Injectable
+- Tipado en inputs, outputs y servicios
+
+Clase 4: Directivas
+- Estructurales: *ngIf, *ngFor
+- Atributos: [ngClass], [ngStyle]
+
+Clase 5: Servicios e Inyección de Dependencias
+- Crear servicio: ng generate service datos
+- Inyectar en constructor()
+- Compartir datos entre componentes
+
+Clase 6: Routing y Navegación
+- Configurar rutas en app-routing.module.ts
+- Usar routerLink y parámetros de ruta
+
+Clase 7: Consumo de APIs externas
+- Importar HttpClientModule
+- Crear servicio y usar HttpClient.get()
+
+Clase 8: Formularios y Validaciones
+- Template-driven forms: [(ngModel)]
+- Reactive forms: FormGroup, FormControl
+- Validaciones: required, minLength, etc.
+
+Clase 9: Build y Deploy
+- Compilar: ng build --configuration production
+- Deploy: Netlify, Firebase o GitHub Pages
+
+🚀 Consejos para el Estudio
+- Tomar apuntes en Markdown
+- Commits frecuentes
+- Usar ramas para experimentar
+
+🧠 Próximos pasos
+- Pedir prácticas si querés reforzar
+- Consultar dudas
+- Avanzar a tu ritmo con constancia
+
+¡Comenzá con la Clase 1 y avisame cuando estés listo para la siguiente! 🚀

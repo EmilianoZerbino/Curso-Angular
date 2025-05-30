@@ -1,0 +1,46 @@
+Clase 1: Tu primer proyecto Angular
+
+Introducción
+
+¡Bienvenido a tu primer clase de Angular! En esta sesión vamos a aprender cómo crear un proyecto básico con Angular utilizando Angular CLI, la herramienta oficial para generar y manejar proyectos Angular. Verás cómo levantar un servidor local para poder ver tu aplicación corriendo en tiempo real en el navegador.
+
+Este es el primer paso para comenzar a desarrollar aplicaciones web modernas, dinámicas y escalables con Angular.
+
+Paso 1: Crear un nuevo proyecto Angular
+
+Abre tu terminal o consola de comandos y ejecuta lo siguiente para crear un nuevo proyecto llamado `primer-proyecto`:
+
+ng new primer-proyecto
+
+Durante la creación, Angular CLI te hará algunas preguntas:
+
+- ¿Quieres añadir routing? (Sí o No)
+- ¿Qué tipo de hojas de estilo prefieres? (CSS, SCSS, SASS, Less, Stylus)
+
+Elige las opciones que prefieras según tus necesidades o déjalas por defecto.
+
+Paso 2: Ejecutar el servidor local
+
+Una vez creado el proyecto, entra en la carpeta del proyecto con:
+
+cd primer-proyecto
+
+Para iniciar la aplicación, ejecuta el comando:
+
+ng serve
+
+Este comando compila tu proyecto y levanta un servidor local que actualizará automáticamente la página si haces cambios en el código.
+
+Paso 3: Abrir la aplicación en el navegador
+
+Abre tu navegador web y navega a:
+
+http://localhost:4200
+
+Ahí verás la página inicial generada por Angular, confirmando que tu proyecto está corriendo correctamente.
+
+Resumen
+
+- Usamos `ng new` para crear el proyecto.
+- Ejecutamos `ng serve` para levantar el servidor local.
+- Accedimos a `http://localhost:4200` para ver la aplicación en acción.
